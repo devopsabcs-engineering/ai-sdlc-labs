@@ -1,0 +1,167 @@
+site_name: AI-SDLC Labs
+site_description: Bilingual (EN/FR) hands-on labs - build an app from idea to production with the ai-team-sdlc Copilot plugin.
+site_url: https://devopsabcs-engineering.github.io/ai-sdlc-labs/
+repo_url: https://github.com/devopsabcs-engineering/ai-sdlc-labs
+repo_name: devopsabcs-engineering/ai-sdlc-labs
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; devopsabcs-engineering - Apache-2.0
+strict: true
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+# Not a page: documents the screenshot slots only.
+exclude_docs: |
+  assets/img/README.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/ai-sdlc.css
+extra_javascript:
+  - javascripts/lang-pref.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      zoomable: true
+      draggable: false
+      auto_caption: false
+  # Folder layout: docs/en and docs/fr hold the translated pages.
+  # The plugin always builds its *default* language at the site root and the
+  # other languages under /<locale>/. To publish /en/ and /fr/ side by side, the
+  # root is owned by the Material-supported locale "eo", which only contains the
+  # language-picker landing page (docs/index.md) and the 404 page. It is hidden
+  # from the language switcher (see extra.alternate below).
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      languages:
+        - locale: eo
+          default: true
+          build: true
+          name: Language picker
+          site_name: AI-SDLC Labs
+          nav:
+            - index.md
+        - locale: en
+          build: true
+          name: English
+          site_name: AI-SDLC Labs
+          nav_translations: {}
+        - locale: fr
+          build: true
+          name: Français
+          site_name: Ateliers AI-SDLC
+          site_description: Ateliers pratiques bilingues (EN/FR) - créez une application, de l'idée à la production, avec le plugin Copilot ai-team-sdlc.
+          theme:
+            palette:
+              - toggle:
+                  name: Passer au mode sombre
+              - toggle:
+                  name: Passer au mode clair
+          admonition_translations:
+            note: Remarque
+            abstract: Résumé
+            info: Information
+            tip: Astuce
+            success: Réussite
+            question: Question
+            warning: Avertissement
+            failure: Échec
+            danger: Danger
+            bug: Bogue
+            example: Exemple
+            quote: Citation
+          nav_translations:
+            Home: Accueil
+            Labs: Ateliers
+            Reference: Référence
+
+extra:
+  generator: false
+  alternate:
+    - name: English
+      link: en/
+      lang: en
+    - name: Français
+      link: fr/
+      lang: fr
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/devopsabcs-engineering/ai-sdlc-labs
+      name: GitHub
+
+nav:
+  - Home: index.md
+  - Labs:
+      - labs/index.md
+      - labs/lab-00-setup.md
+      - labs/lab-01-idea-to-brief.md
+      - labs/lab-02-design-prototype.md
+      - labs/lab-03-requirements-architecture.md
+      - labs/lab-04-build-in-slices.md
+      - labs/lab-05-qa-critic-security.md
+      - labs/lab-06-signoff-changes-requested.md
+      - labs/lab-07-deploy.md
+      - labs/lab-08-resume-recover-teardown.md
+  - Reference:
+      - glossary.md
+      - troubleshooting.md
+      - about.md
