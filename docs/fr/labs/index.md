@@ -50,5 +50,5 @@ Un point de contrôle est une étiquette Git (tag) du [dépôt de référence Pi
 !!! checkpoint "Suivre l'exécution ou apporter votre idée"
     Sur le parcours enregistré, extrayez l'étiquette de point de contrôle de l'atelier précédent pour partir d'un état connu. Sur votre propre parcours, votre dépôt est votre point de contrôle : faites un commit à la fin de chaque atelier.
 
-!!! wip "Contenu en cours de rédaction"
-    L'installation (atelier 0) est complète. Les ateliers 1 à 8 présentent aujourd'hui leur aperçu et leurs objectifs ; les étapes détaillées, les captures d'écran et les points de contrôle s'ajoutent à mesure que l'application de référence est construite.
+!!! success "Tous les ateliers sont publiés"
+    Les ateliers 0 à 8 sont complets. Chaque atelier propose des étapes détaillées, de vraies captures d'écran tirées de l'exécution enregistrée de Pinch et un point de contrôle (étiquette) dans le dépôt de référence.

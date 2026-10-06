@@ -78,8 +78,8 @@ node --version; git --version; gh --version; copilot --version
 ```
 
 <figure class="screenshot-frame" markdown>
-![Placeholder PowerShell window showing the command that prints the Node.js, Git, GitHub CLI and Copilot CLI versions](../../assets/img/lab-00/00-01-tool-versions.svg)
-<figcaption>Checking the four tool versions in PowerShell. Replaced by a real capture in the screenshot phase.</figcaption>
+![PowerShell window showing the command that prints the Node.js, Git, GitHub CLI and Copilot CLI versions, with the four version lines below it](../../assets/img/lab-00/00-01-tool-versions.png)
+<figcaption>Checking the four tool versions in PowerShell. Your version numbers can be newer.</figcaption>
 </figure>
 
 !!! success "Expected result"
@@ -115,8 +115,8 @@ copilot plugin list
 ```
 
 <figure class="screenshot-frame" markdown>
-![Placeholder PowerShell window showing the copilot plugin list command](../../assets/img/lab-00/00-02-plugin-list.svg)
-<figcaption>The plugin list must include ai-team-sdlc. Replaced by a real capture in the screenshot phase.</figcaption>
+![PowerShell window showing copilot plugin list with ai-team-sdlc@ai-team-sdlc under Installed plugins](../../assets/img/lab-00/00-02-plugin-list.png)
+<figcaption>The plugin list must include ai-team-sdlc. Other plugins on the capture machine are not shown.</figcaption>
 </figure>
 
 !!! success "Expected result"
@@ -153,8 +153,8 @@ git status --short
 ```
 
 <figure class="screenshot-frame" markdown>
-![Placeholder PowerShell window showing the copilot command that runs the ait-init skill in the practice repository](../../assets/img/lab-00/00-03-ait-init.svg)
-<figcaption>Running ait-init from the repository root. Replaced by a real capture in the screenshot phase.</figcaption>
+![PowerShell window showing the copilot command that runs the ait-init skill, then git show listing the three files it created](../../assets/img/lab-00/00-03-ait-init.png)
+<figcaption>Running ait-init from the repository root: three files are added in one commit.</figcaption>
 </figure>
 
 !!! success "Expected result"

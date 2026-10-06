@@ -50,5 +50,5 @@ A checkpoint is a Git tag in the [Pinch reference repository](https://github.com
 !!! checkpoint "Follow along or bring your own idea"
     On the recorded path, check out the checkpoint tag of the previous lab to start from a known state. On your own path, your repository is your checkpoint: commit at the end of every lab.
 
-!!! wip "Content in progress"
-    Setup (Lab 0) is complete. Labs 1 to 8 show their overview and objectives today; the full steps, screenshots and checkpoints are added as the reference app is built.
+!!! success "All labs are published"
+    Labs 0 to 8 are complete. Every lab has full steps, real screenshots from the recorded Pinch run, and a checkpoint tag in the reference repository.

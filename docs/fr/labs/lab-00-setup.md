@@ -78,8 +78,8 @@ node --version; git --version; gh --version; copilot --version
 ```
 
 <figure class="screenshot-frame" markdown>
-![Fenêtre PowerShell provisoire montrant la commande qui affiche les versions de Node.js, Git, GitHub CLI et Copilot CLI](../../assets/img/lab-00/00-01-tool-versions.svg)
-<figcaption>Vérification des quatre versions d'outils dans PowerShell. Sera remplacée par une vraie capture lors de la phase des captures d'écran.</figcaption>
+![Fenêtre PowerShell montrant la commande qui affiche les versions de Node.js, Git, GitHub CLI et Copilot CLI, avec les quatre lignes de version en dessous](../../assets/img/lab-00/00-01-tool-versions.png)
+<figcaption>Vérification des quatre versions d'outils dans PowerShell. Vos numéros de version peuvent être plus récents.</figcaption>
 </figure>
 
 !!! success "Résultat attendu"
@@ -115,8 +115,8 @@ copilot plugin list
 ```
 
 <figure class="screenshot-frame" markdown>
-![Fenêtre PowerShell provisoire montrant la commande copilot plugin list](../../assets/img/lab-00/00-02-plugin-list.svg)
-<figcaption>La liste doit inclure ai-team-sdlc. Sera remplacée par une vraie capture lors de la phase des captures d'écran.</figcaption>
+![Fenêtre PowerShell montrant copilot plugin list avec ai-team-sdlc@ai-team-sdlc sous Installed plugins](../../assets/img/lab-00/00-02-plugin-list.png)
+<figcaption>La liste doit inclure ai-team-sdlc. Les autres plugins de l'ordinateur de capture ne sont pas affichés.</figcaption>
 </figure>
 
 !!! success "Résultat attendu"
@@ -153,8 +153,8 @@ git status --short
 ```
 
 <figure class="screenshot-frame" markdown>
-![Fenêtre PowerShell provisoire montrant la commande copilot qui exécute la compétence ait-init dans le dépôt d'entraînement](../../assets/img/lab-00/00-03-ait-init.svg)
-<figcaption>Exécution de ait-init depuis la racine du dépôt. Sera remplacée par une vraie capture lors de la phase des captures d'écran.</figcaption>
+![Fenêtre PowerShell montrant la commande copilot qui exécute la compétence ait-init, puis git show qui liste les trois fichiers créés](../../assets/img/lab-00/00-03-ait-init.png)
+<figcaption>Exécution de ait-init depuis la racine du dépôt : trois fichiers sont ajoutés dans un seul commit.</figcaption>
 </figure>
 
 !!! success "Résultat attendu"
